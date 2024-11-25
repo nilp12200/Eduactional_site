@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-q8)#@jj(&2btnwqhn-_1ito7_zt1_t@az31z!9=(_0o60^y!x4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['eduactional-site.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['postgresql://educational_database_user:glNxJLKsnfE5HDiwvmsD34H9lBa3oUbH@dpg-csvlr55ds78s73en50f0-a.oregon-postgres.render.com/educational_database', 'localhost', '127.0.0.1']
 
 
 # Application definition
