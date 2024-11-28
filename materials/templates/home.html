@@ -6,25 +6,16 @@
     <title>Educational PDF Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100 font-sans text-base">
 
     <!-- Header Section -->
     <header class="bg-blue-500 text-white p-4">
-        <!-- <div class="container mx-auto flex justify-between items-center"> -->
-            <!-- Title -->
-            <!-- <h1 class="text-xl font-bold">Educational PDF Portal</h1> -->
-            <!-- Navigation Links -->
-            <!-- <nav class="flex text-2xl space-x-6">
-                <a href="{% url 'teacher_dashboard' %}" class="text-sm hover:underline">Teacher</a>
-                <a href="{% url 'student_dashboard' %}" class="text-sm hover:underline">Student</a>
+        <div class="flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Educational PDF Portal</h1>
+            <nav class="flex space-x-6">
+                <a href="{% url 'teacher_dashboard' %}" class="text-lg hover:underline">Teacher</a>
+                <a href="{% url 'student_dashboard' %}" class="text-lg hover:underline">Student</a>
             </nav>
-        </div> -->
-        <div class="bg-blue-500 text-white p-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold">Educational PDF Portal</h1>
-            <div class="flex text  space-x-4">
-                <a href="{% url 'teacher_dashboard' %}" class="text-sm hover:underline">Teacher</a>
-                <a href="{% url 'student_dashboard' %}" class="text-sm hover:underline">Student</a>
-            </div>
         </div>
     </header>
 
@@ -32,8 +23,8 @@
     <main class="container mx-auto mt-10 p-4">
         <!-- Welcome Section -->
         <div class="text-center">
-            <h2 class="text-2xl font-semibold">Welcome to the Educational PDF Portal</h2>
-            <p class="mt-4 text-gray-700">
+            <h2 class="text-3xl font-semibold">Welcome to the Educational PDF Portal</h2>
+            <p class="mt-4 text-gray-700 text-lg">
                 Access and manage educational materials for students in grades 8, 9, and 10. 
                 Teachers can upload and edit PDFs, while students can view and download resources.
             </p>
@@ -41,25 +32,25 @@
 
         <!-- Buttons Section -->
         <div class="mt-10 flex flex-col items-center space-y-4">
-            <a href="{% url 'teacher_dashboard' %}" class="bg-blue-500 text-white px-6 py-2 rounded shadow hover:bg-blue-600">
+            <a href="{% url 'teacher_dashboard' %}" class="bg-blue-500 text-white text-lg px-6 py-3 rounded shadow hover:bg-blue-600">
                 Teacher Section
             </a>
-            <a href="{% url 'student_dashboard' %}" class="bg-green-500 text-white px-6 py-2 rounded shadow hover:bg-green-600">
+            <a href="{% url 'student_dashboard' %}" class="bg-green-500 text-white text-lg px-6 py-3 rounded shadow hover:bg-green-600">
                 Student Section
             </a>
         </div>
 
         <!-- Upload Materials Section -->
         <div class="mt-10 p-4 bg-white shadow rounded">
-            <h3 class="text-lg font-semibold">Upload Materials</h3>
-            <p class="mt-2 text-gray-700">
+            <h3 class="text-xl font-semibold">Upload Materials</h3>
+            <p class="mt-2 text-gray-700 text-base">
                 Teachers can easily upload, manage, and organize PDFs by category and grade.
             </p>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white p-4 mt-10 text-center">
+    <footer class="bg-gray-800 text-white p-4 mt-10 text-center text-sm">
         <p>&copy; 2024 Educational PDF Portal. All rights reserved.</p>
     </footer>
 
