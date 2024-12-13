@@ -7,9 +7,29 @@ from django.shortcuts import render, redirect, get_object_or_404
 
 
 
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login as auth_login
+from django.contrib import messages
 
 def login(request):
-    return render(request,'login.html')
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        
+        # Authenticate user
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            # Log the user in
+            auth_login(request, user)
+            
+            # Redirect to the teacher dashboard
+            return redirect('teacher_dashboard')
+        else:
+            # Show an error message if authentication fails
+            messages.error(request, 'Invalid username or password.')
+    
+    # Render the login page
+    return render(request, 'login.html')
 
 
 def home(request):
