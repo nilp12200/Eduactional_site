@@ -31,5 +31,6 @@ urlpatterns = [
     path('teacher/',views.teacher_dashboard,name='teacher_dashboard'),
     path('student/', views.student_dashboard, name='student_dashboard'),
     path('student/download', views.download_pdfs, name='view_pdf'),
+    path('login/', views.login, name='login'),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
