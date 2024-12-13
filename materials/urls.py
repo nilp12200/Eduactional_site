@@ -42,6 +42,7 @@ urlpatterns = [
     path('grade_9_pdfsd', views.grade_9_pdfsd, name='grade_9_pdfsd'),
     path('grade_10_pdfsd', views.grade_10_pdfsd, name='grade_10_pdfsd'),
     path('download/<int:pdf_id>/', views.download_pdf, name='download_pdf'),
+    path('login/', views.login, name='login'),
     
 
     
